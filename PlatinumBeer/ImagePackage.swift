@@ -11,17 +11,15 @@ class ImagePackage {
     var baseFileName : String!
     var caption : String!
     var photographer : String!
-    var image : UIImage?
-    
+    var image: UIImage!
     
     init(baseFileName: String, caption: String, photographer: String) {
         
         self.baseFileName = baseFileName
         self.caption = caption
         self.photographer = photographer
-    }
-    
-    
+        self.image = UIImage(named: self.getLargeFileName())
+    }    
     
     func getSmallFileName() -> String {
         return self.baseFileName + "small.jpg"

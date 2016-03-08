@@ -16,6 +16,7 @@ class PicturesViewController: UIViewController, UICollectionViewDataSource, UICo
     var imageGallery = ImageGallery()
     
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
+    var currentImagePackage : ImagePackage!
     
     @IBAction func goBack(sender: UIBarButtonItem) {
         dismissViewControllerAnimated(true, completion: nil)
@@ -55,6 +56,20 @@ class PicturesViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
+        let imagePackage = self.imageGallery.getImage(indexPath.item)
+        self.currentImagePackage = imagePackage
+        
+        self.performSegueWithIdentifier("playPuzzle", sender: self)
+    }
+    
+    // Segue to game screen
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+        if segue.identifier == "playPuzzle" {
+            let gameScreen = segue.destinationViewController as! PuzzleViewController
+            gameScreen.currentImagePackage = self.currentImagePackage
+            //gameScreen.tilesPerRow = self.userDefaults.integerForKey("tilesPerRow")
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,3 +77,6 @@ class PicturesViewController: UIViewController, UICollectionViewDataSource, UICo
         // Dispose of any resources that can be recreated.
     }
 }
+
+
+

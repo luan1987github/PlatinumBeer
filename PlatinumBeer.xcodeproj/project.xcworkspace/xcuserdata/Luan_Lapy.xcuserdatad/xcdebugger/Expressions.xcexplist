@@ -17,10 +17,10 @@
                value = "txtName.text">
             </PersistentString>
             <PersistentString
-               value = "txtPhone.text">
+               value = "segGender.selectedSegmentIndex">
             </PersistentString>
             <PersistentString
-               value = "segGender.selectedSegmentIndex">
+               value = "txtPhone.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -34,6 +34,25 @@
       </ContextState>
       <ContextState
          contextName = "User.init(name : String, phone : String, gender : Int) -&gt; User:User.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PicturesViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject!) -&gt; ():PicturesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gameScreen.currentImagePackage">
+            </PersistentString>
+            <PersistentString
+               value = "self.currentImagePackage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PicturesViewController.collectionView(UICollectionView, didSelectItemAtIndexPath : NSIndexPath) -&gt; ():PicturesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentImagePackage">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>
