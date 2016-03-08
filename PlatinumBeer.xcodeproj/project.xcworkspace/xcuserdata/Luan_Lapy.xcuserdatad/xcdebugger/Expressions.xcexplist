@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PicturesViewController.numberOfSectionsInCollectionView(UICollectionView) -&gt; Int:PicturesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.imageGallery.animalImagePackages.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.storeUser() -&gt; ():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "txtName.text">
+            </PersistentString>
+            <PersistentString
+               value = "txtPhone.text">
+            </PersistentString>
+            <PersistentString
+               value = "segGender.selectedSegmentIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PicturesViewController.collectionView(UICollectionView, cellForItemAtIndexPath : NSIndexPath) -&gt; UICollectionViewCell:PicturesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.label.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "User.init(name : String, phone : String, gender : Int) -&gt; User:User.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
