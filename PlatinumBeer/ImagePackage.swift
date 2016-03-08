@@ -9,15 +9,13 @@ import UIKit
 class ImagePackage {
     
     var baseFileName : String!
-    var caption : String!
-    var photographer : String!
+    var game : String!
     var image: UIImage!
     
-    init(baseFileName: String, caption: String, photographer: String) {
+    init(baseFileName: String, game: String) {
         
         self.baseFileName = baseFileName
-        self.caption = caption
-        self.photographer = photographer
+        self.game = game
         self.image = UIImage(named: self.getLargeFileName())
     }    
     

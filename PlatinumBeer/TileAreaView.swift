@@ -56,6 +56,7 @@ class TileAreaView: UIView {
         if userDefaults.boolForKey("rotationsOn") {
             self.rotateTiles()
         }
+        
     }
     
     
@@ -241,10 +242,7 @@ class TileAreaView: UIView {
             })
         }
     }
-    
-    
-    
-    
+     
     // MARK: ROTATIONS
     func rotateTiles() {
         // Rotate random tiles a bunch of times

@@ -11,28 +11,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LoginViewController.storeUser() -&gt; ():LoginViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "txtName.text">
-            </PersistentString>
-            <PersistentString
-               value = "segGender.selectedSegmentIndex">
-            </PersistentString>
-            <PersistentString
-               value = "txtPhone.text">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PicturesViewController.collectionView(UICollectionView, cellForItemAtIndexPath : NSIndexPath) -&gt; UICollectionViewCell:PicturesViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "cell.label.text">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "User.init(name : String, phone : String, gender : Int) -&gt; User:User.swift">
       </ContextState>
       <ContextState
@@ -47,10 +25,40 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "TileAreaView.initialize() -&gt; ():TileAreaView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "watcher">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.storeUser() -&gt; ():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "txtName.text">
+            </PersistentString>
+            <PersistentString
+               value = "segGender.selectedSegmentIndex">
+            </PersistentString>
+            <PersistentString
+               value = "txtPhone.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "PicturesViewController.collectionView(UICollectionView, didSelectItemAtIndexPath : NSIndexPath) -&gt; ():PicturesViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "currentImagePackage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PicturesViewController.collectionView(UICollectionView, cellForItemAtIndexPath : NSIndexPath) -&gt; UICollectionViewCell:PicturesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.label.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -195,6 +195,7 @@
 		88C611111C8C971400D85AD0 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C611101C8C971400D85AD0 /* ImageCollectionViewCell.swift */; };
 		88EF1AA01C8F1C400076BAD9 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF1A9F1C8F1C400076BAD9 /* PuzzleViewController.swift */; };
 		88EF1AA31C8F1EEE0076BAD9 /* TileAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF1AA21C8F1EEE0076BAD9 /* TileAreaView.swift */; };
+		88EF1AA71C8F3B550076BAD9 /* Watcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF1AA61C8F3B550076BAD9 /* Watcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -400,6 +401,7 @@
 		88C611101C8C971400D85AD0 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		88EF1A9F1C8F1C400076BAD9 /* PuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
 		88EF1AA21C8F1EEE0076BAD9 /* TileAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileAreaView.swift; sourceTree = "<group>"; };
+		88EF1AA61C8F3B550076BAD9 /* Watcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -693,6 +695,7 @@
 				88C610FF1C8C87A800D85AD0 /* PuzzleSolvedProtocol.swift */,
 				88C611001C8C87A800D85AD0 /* Tile.swift */,
 				88C6110C1C8C8C5C00D85AD0 /* User.swift */,
+				88EF1AA61C8F3B550076BAD9 /* Watcher.swift */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -1004,6 +1007,7 @@
 				88C611041C8C87A800D85AD0 /* DoubleIndex.swift in Sources */,
 				88C6110D1C8C8C5C00D85AD0 /* User.swift in Sources */,
 				88C611031C8C87A800D85AD0 /* UIColorExtension.swift in Sources */,
+				88EF1AA71C8F3B550076BAD9 /* Watcher.swift in Sources */,
 				885DDCF81C89EF7000467003 /* PicturesViewController.swift in Sources */,
 				8875033E1C89CF8200A68F87 /* PlatinumBeer.xcdatamodeld in Sources */,
 				88C611071C8C87A800D85AD0 /* PuzzleSolvedProtocol.swift in Sources */,

@@ -12,6 +12,8 @@ class PuzzleViewController: UIViewController, PuzzleSolvedProtocol
 {
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
+    var watcher = Watcher()
+    
     var currentImagePackage : ImagePackage!
     var tilesPerRow = 3
     var timeLimit = 15
@@ -43,10 +45,19 @@ class PuzzleViewController: UIViewController, PuzzleSolvedProtocol
         self.view.bringSubviewToFront(self.tileArea)
         self.tileArea.initialize()
         self.tileArea.layer.borderWidth = 2
+        
+        watcher.start()
     }
     
     // MARK: Other class methods
     func puzzleIsSolved() {
+        watcher.stop()
+        if self.watcher.durationSeconds() > 15 {
+            
+        } else {
+            
+        }
+        print(String(self.watcher.durationSeconds()))
         let alertController = UIAlertController(title: "iOScreator", message:
             "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
