@@ -16,18 +16,20 @@ class PuzzleViewController: UIViewController, PuzzleSolvedProtocol
     
     var currentImagePackage : ImagePackage!
     var tilesPerRow = 3
-    var timeLimit = 15
+    var timeLimit = 15.0
     
     // MARK: VIEWS
     @IBOutlet weak var tileArea: TileAreaView!
-
+    @IBOutlet weak var btnNextQuestions: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        let imageGallery = ImageGallery()
-        currentImagePackage = imageGallery.getImage(0)
+//        let imageGallery = ImageGallery()
+//        currentImagePackage = imageGallery.getImage(0)
+        
+        self.btnNextQuestions.enabled = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,19 +51,32 @@ class PuzzleViewController: UIViewController, PuzzleSolvedProtocol
         watcher.start()
     }
     
+    @IBAction func pressNext(sender:UIBarButtonItem)
+    {
+        self.performSegueWithIdentifier("loadMultiChoice", sender: self)
+    }
+    
     // MARK: Other class methods
     func puzzleIsSolved() {
         watcher.stop()
-        if self.watcher.durationSeconds() > 15 {
+        self.btnNextQuestions.enabled = true
+
+        if self.watcher.durationSeconds() > self.timeLimit {
             
         } else {
-            
+            self.btnNextQuestions.enabled = true
+            // success
+            self.calculateScore()
         }
-        print(String(self.watcher.durationSeconds()))
-        let alertController = UIAlertController(title: "iOScreator", message:
+                let alertController = UIAlertController(title: "iOScreator", message:
             "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
         
         self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func calculateScore()
+    {
+        
     }
 }

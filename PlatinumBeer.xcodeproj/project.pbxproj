@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		885DDCF81C89EF7000467003 /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885DDCF71C89EF7000467003 /* PicturesViewController.swift */; };
+		887169C91C907FDF005F5E44 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887169C81C907FDF005F5E44 /* QuestionsViewController.swift */; };
+		887169CC1C90833C005F5E44 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887169CB1C90833C005F5E44 /* ResultViewController.swift */; };
 		887503361C89CF8200A68F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887503351C89CF8200A68F87 /* AppDelegate.swift */; };
 		887503381C89CF8200A68F87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887503371C89CF8200A68F87 /* ViewController.swift */; };
 		8875033E1C89CF8200A68F87 /* PlatinumBeer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8875033C1C89CF8200A68F87 /* PlatinumBeer.xcdatamodeld */; };
@@ -210,6 +212,8 @@
 
 /* Begin PBXFileReference section */
 		885DDCF71C89EF7000467003 /* PicturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
+		887169C81C907FDF005F5E44 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		887169CB1C90833C005F5E44 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		887503321C89CF8200A68F87 /* PlatinumBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatinumBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887503351C89CF8200A68F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		887503371C89CF8200A68F87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -422,6 +426,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		887169CA1C907FE6005F5E44 /* MultiChoice */ = {
+			isa = PBXGroup;
+			children = (
+				887169C81C907FDF005F5E44 /* QuestionsViewController.swift */,
+			);
+			name = MultiChoice;
+			sourceTree = "<group>";
+		};
+		887169CD1C908341005F5E44 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				887169CB1C90833C005F5E44 /* ResultViewController.swift */,
+			);
+			name = Result;
+			sourceTree = "<group>";
+		};
 		887503291C89CF8200A68F87 = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +476,8 @@
 				887503441C89CF8200A68F87 /* Info.plist */,
 				8875033C1C89CF8200A68F87 /* PlatinumBeer.xcdatamodeld */,
 				88EF1AA11C8F1C450076BAD9 /* Puzzle Screen */,
+				887169CA1C907FE6005F5E44 /* MultiChoice */,
+				887169CD1C908341005F5E44 /* Result */,
 			);
 			path = PlatinumBeer;
 			sourceTree = "<group>";
@@ -1004,12 +1026,14 @@
 				88C611061C8C87A800D85AD0 /* ImagePackage.swift in Sources */,
 				887503381C89CF8200A68F87 /* ViewController.swift in Sources */,
 				88C611111C8C971400D85AD0 /* ImageCollectionViewCell.swift in Sources */,
+				887169C91C907FDF005F5E44 /* QuestionsViewController.swift in Sources */,
 				88C611041C8C87A800D85AD0 /* DoubleIndex.swift in Sources */,
 				88C6110D1C8C8C5C00D85AD0 /* User.swift in Sources */,
 				88C611031C8C87A800D85AD0 /* UIColorExtension.swift in Sources */,
 				88EF1AA71C8F3B550076BAD9 /* Watcher.swift in Sources */,
 				885DDCF81C89EF7000467003 /* PicturesViewController.swift in Sources */,
 				8875033E1C89CF8200A68F87 /* PlatinumBeer.xcdatamodeld in Sources */,
+				887169CC1C90833C005F5E44 /* ResultViewController.swift in Sources */,
 				88C611071C8C87A800D85AD0 /* PuzzleSolvedProtocol.swift in Sources */,
 				887503361C89CF8200A68F87 /* AppDelegate.swift in Sources */,
 				88EF1AA01C8F1C400076BAD9 /* PuzzleViewController.swift in Sources */,
